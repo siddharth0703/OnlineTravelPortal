@@ -1,0 +1,75 @@
+<style>
+* {
+    box-sizing: border-box;
+}
+
+ input[type=Date],select, textarea,button{
+    width: 50%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=search] {
+    background-color: #4CAF50;
+    color: black;
+    padding: 12px 27px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: left;
+}
+
+input[type=search]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    size: 50px;
+}
+
+.col-25 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-25 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+background-color:teal;
+text-decoration: underline;
+padding:15px;
+color:black;
+text-shadow: 0.25px 0.25px black;
+
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-25, input[type=search] {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+</style>

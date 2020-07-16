@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>BusPage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/1.css">
+<link rel="stylesheet" href="css/2.css">
+<link rel="stylesheet" href="css/3.css">
+<link rel="stylesheet" href="css/4.css">
+<link rel="stylesheet" href="css/all.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black"
+				href="javascript:void(0);" onclick="myFunction()"
+				title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a
+				href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+			<a href="Bus.jsp"
+				class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Bus</a>
+			<a href="flight.html"
+				class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Flight</a>
+			<a href="Train.html"
+				class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Train</a>
+			<a href="Hotel.html"
+				class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hotel</a>
+			<a href="register.jsp"
+				class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sign
+				Up</a> <a href="loginUser.jsp"
+				class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login</a>
+				 <a href="BookBikeUserForm.jsp"
+				class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Book a Bike!</a>
+				<a href="feedbackform.html"
+				class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Feedback</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="template.html" class="w3-bar-item w3-button w3-padding-large">Bus</a>
+    <a href="flight.html" class="w3-bar-item w3-button w3-padding-large">Flight</a>
+    <a href="Train.html" class="w3-bar-item w3-button w3-padding-large">Train</a>
+    <a href="Hotel.html" class="w3-bar-item w3-button w3-padding-large">Hotel</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-teal w3-center" style="padding:2px 10px">
+<br><br>
+<div style="color:black;padding:1px; ">
+  <h2 style="font-size:5vw;">Osho Travels</h2>
+</div>
+  <button class="w3-button w3-black w3-padding-medium w3-hide-medium w3-margin-top w3-button">Login</button>
+
+</header>
+
+<!-- First Grid -->
+<link rel="stylesheet" href="all.css">
+<h2><font color:red size:35>Search Bus...</h2>
+
+
+<div class="container">
+  <form action="/action_page.php">
+     <div class="row">
+      <div class="col-25">
+        <label for="source">Select Source</label>
+      </div>
+      <div class="col-25">
+        <select id="source" name="source">
+          <option value="New Delhi">New Delhi</option>
+          <option value="Madurai">Madurai</option>
+          <option value="Varansi">Varansi</option>
+          <option value="Agra">Agra</option>
+          <option value="Bombay">Bombay</option>
+        </select>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="desttination">Select Destination</label>
+      </div>
+      <div class="col-25">
+        <select id="country" name="country">
+          <option value="New Delhi">New Delhi</option>
+          <option value="Madurai">Madurai</option>
+          <option value="Varansi">Varansi</option>
+          <option value="Agra">Agra</option>
+          <option value="Bombay">Bombay</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Departure Date</label>
+      </div>
+       <div class="col-25">
+        <input type="Date" id="date" name="departDate" placeholder="Enter your Depart date">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="seat">Seat</label>
+      </div>
+      <div class="col-25">
+        <select id="country" name="country">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="row">
+
+      <input type="search" value="Search Buses">
+    </div>
+  </form>
+</div>
+
+
+<!-- Footer -->
+
+<footer>
+
+<table style="width:100%">
+<tr><td><h3>Help</h3></b></td>
+<td><h3>Popular</h3></td>
+<td><h3>NBCI</h3></td></tr>
+<tr><td>FAQ</td>
+<td>Email</td>
+<td>Phone</td></tr>
+<tr><td>Trivago</td>
+<td>Yatra</td>
+<td>MakeMyTrip</td>
+</tr>
+<tr><td>Trainning</td>
+<td>Tutorial</td>
+<td>Bugs</td></tr>
+
+</tr>
+</table>
+</footer>
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
